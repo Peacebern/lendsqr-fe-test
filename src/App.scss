@@ -20,7 +20,7 @@
   .container_1 {
     width: 50%;
     display: flex;
-    height: 85%;
+    height: 70%;
     margin: auto;
     flex-direction: column;
     // justify-content: space-around;
@@ -1535,7 +1535,19 @@ MOBILE RESPONSIVES
 
 
 // LOGIN PAGE
-
+//using background-color to track media query breakpoint accurately
+@media (min-width: 1200px) {
+  .container_1 {   
+    height: 80%;
+    // background-color: blue;
+  }
+}
+@media (min-width: 1024px) {
+  .container_1 {   
+    height: 60%;
+    // background-color: red;
+  }
+}
 @media only screen and (max-width: 900px) {
   .login {
     .container_1 {
@@ -1577,6 +1589,7 @@ MOBILE RESPONSIVES
   }
 
   /*Small smartphones [325px -> 425px]*/
+  //using background colors to track media query breakpoint accurately
   .login {
 
     .container_2 {
