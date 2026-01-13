@@ -1,5 +1,6 @@
 /*Work Sans Font Import Url*/
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap");
+
 /**Login Page Styles*/
 .login {
   background-color: var(--mainbg);
@@ -7,6 +8,7 @@
   flex-direction: row;
   height: 100vh;
   justify-content: center;
+  
 }
 .login .container_1 {
   width: 50%;
