@@ -1,10 +1,13 @@
 
-# LENDSQR FE CANDIDATES TEST
+# Lendsqr Frontend Dashboard (Assessment Submission)
 
-This project is a Submission for Lendsqr Frontend Engineers Candidates Test. 
+# Overview
+
+This project is a frontend implementation of an internal admin/dashboard interface, modeled after the Lendsqr Admin Console. It was built as a technical assessment to demonstrate frontend engineering fundamentals: structure, component design, data presentation, and decision-making.
 
 
-## Authors
+
+## Author
 
 - [@Peacebern](https://github.com/peacebern)
 
@@ -14,26 +17,68 @@ This project is a Submission for Lendsqr Frontend Engineers Candidates Test.
 Utilized cust hooks to Improve Perfomance e.g using the useMemo hook to handle the table pagination improved the performance by 100%.
 
 
-## Screenshots
+## Demo
+![Alt text](src/assets/screenshot/peace-oluchi-okeke-lendsqr-assessment.png)
 
 
+# Tech Stack
 
+* React – Component-driven UI development
 
-## Appendix
+* TypeScript – Type safety and clearer contracts
 
-The Project Employs Practices Like:
+* Vite – Fast development and modern tooling
 
-- Maintain Clear Folder Structure.
-- Institute a Structured Import Order.
-- Adhere To Naming Conventions.
-- Use a Linter.
-- Employ Snippet Libraries.
-- Uses Scss.
-- Limit Component Creation.
+* SCSS / CSS Modules – Scoped, maintainable styling
+
+* React Router – Client-side navigation
+
+* Mock data – Used to simulate backend responses
+
+# Reason for this stack
+This mirrors a common production setup for internal dashboards: React for flexibility, TypeScript for safety, and scoped styles to avoid UI regressions as the app grows. 
+
+## PROJECT STRUCTURE
+
+src/
+├── assets/        # Images and static assets
+├── components/    # Reusable UI components
+├── pages/         # Route-level views
+├── routes/        # Route configuration
+├── styles/        # Global and modular styles
+├── types/         # Shared TypeScript types
+├── utils/         # Helpers and mock data
+├── App.tsx        # Root component & layout
+└── main.tsx       # Application entry point
+
+## Application Flow
+
+* The app boots from main.tsx
+
+* App.tsx defines global layout and routing
+
+* Each page represents a major admin view (Dashboard, Users, User Details)
+
+* Reusable components handle tables, cards, and layout primitives
+
+* Data is currently mocked to reflect realistic API responses
+
+## Running this Project
+npm install
+npm run dev
+
+## Project Best Practices
+
+- Keep a well-organized folder structure
+- Maintain a consistent import order
+- Follow clear naming conventions
+- Enforce code quality with a linter
+- Leverage snippet libraries for efficiency
+- Style components using SCSS
+- Avoid creating unnecessary components
 
 
 ## Features
-
 
 - Live previews
 - Fullscreen mode
@@ -41,7 +86,11 @@ The Project Employs Practices Like:
 - user management
 
 
-## Tech Stack
+## How to Navigate the Codebase
 
-**Client:** React, Vite, SCSS, Typescript
+* Start here: src/main.tsx
 
+* Then: src/App.tsx for layout and routing
+
+* Pages: src/pages/
+* Reusable components: src/components/
