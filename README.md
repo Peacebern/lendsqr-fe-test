@@ -141,7 +141,7 @@ function generateUser(id){
 const users = [];
 for(let i=1;i<=100;i++){users.push(generateUser(i));}
 fs.writeFileSync("users-data.json",JSON.stringify(users,null,2));
-console.log("✅ Generated 100 users and saved to users-data.json");
+console.log(" Generated 100 users and saved to users-data.json");
 
 </details> <details> <summary><strong>upload-users.js</strong></summary>
 const axios = require("axios");
