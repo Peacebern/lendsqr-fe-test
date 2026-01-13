@@ -5,6 +5,7 @@ import Login from "pages/Login.tsx";
 import Users from "pages/Users.tsx";
 import UserDetails from "pages/UserDetails.tsx";
 import Layout from "layout/Layout.tsx";
+import Documentation from "pages/Documentation.tsx"; 
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Route element={<Layout />}>
         <Route path="/users" element={<Users />} />
         <Route path="/users/:id" element={<UserDetails />} />
+        <Route path="/docs" element={<Documentation />} />
       </Route>
     </Routes>
   );

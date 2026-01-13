@@ -13,7 +13,7 @@ const Sidebar = () => {
       <nav className="sdnav">
         <NavLink
           className={({ isActive }) => (isActive ? "active" : "")}
-          to="/"
+          to="/users"
         >
           <img src={home} alt="home_icon" />
           dashboard
