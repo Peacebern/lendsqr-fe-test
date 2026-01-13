@@ -1,14 +1,20 @@
 import { Link, useNavigate } from "react-router-dom";
-import { logo, login } from "utils/images";
+import { loginlogo, logo, login } from "utils/images";
 
 
 const Login = () => {
   const navigate = useNavigate();
   return (
     <main className="login">
+      {/* <span className="logo_mx">
+        <img src={loginlogo} alt="Lendsqr_logo" />
+      </span> */}
       <section className="container_1">
-        <span className="logo_mx">
+        {/* <span className="logo_mx">
           <img src={logo} alt="Lendsqr_logo" />
+        </span> */}
+        <span className="logo_mx">
+          <img src={loginlogo} alt="Lendsqr_logo" />
         </span>
         <img src={login} alt="login-1" />
       </section>
