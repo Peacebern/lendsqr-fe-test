@@ -30,6 +30,7 @@ const Login = () => {
           <input
             type="button"
             value="LOG IN"
+            style={{ color: "white" }}
             onClick={() => navigate("/users")}
           />
         </form>
