@@ -9,13 +9,15 @@
 
 /**Login Page Styles*/
 
+
+
 .login {
   background-color: var(--mainbg);
   display: flex;
   flex-direction: row;
   height: 100vh;
   justify-content: center;
-  
+
 
   .container_1 {
     width: 50%;
@@ -23,12 +25,11 @@
     height: 70%;
     margin: auto;
     flex-direction: column;
-    // justify-content: space-around;
-    justify-content:space-between;
+    justify-content: space-between;
     gap: 5rem;
     padding: 0rem 7.5rem 5rem;
     // padding: 1rem 7.5rem 7rem;
-    // background-color: #213f7d;
+   
 
     // .logo_mx {
     //   img {
@@ -42,6 +43,15 @@
       max-height: 400px;
     }
   }
+
+  .error {
+    color: red;
+    font-family: work sans;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 0.25rem;
+  }
+
 
   .container_2 {
     width: 50%;
@@ -229,7 +239,7 @@
     .searchImage {
       margin: auto;
       text-align: center;
-      
+
     }
 
     .right {
@@ -1537,17 +1547,19 @@ MOBILE RESPONSIVES
 // LOGIN PAGE
 //using background-color to track media query breakpoint accurately
 @media (min-width: 1200px) {
-  .container_1 {   
+  .container_1 {
     height: 80%;
     // background-color: blue;
   }
 }
+
 @media (min-width: 1024px) {
-  .container_1 {   
+  .container_1 {
     height: 60%;
     // background-color: red;
   }
 }
+
 @media only screen and (max-width: 900px) {
   .login {
     .container_1 {
