@@ -59,7 +59,7 @@ const UserSelect = () => {
         style={style as React.CSSProperties}
       >
         <h3>
-          Adedeji John Doe
+          Adedeji Peace Oluchi
           <br />
           <span>Admin Lendsqr</span>
         </h3>
