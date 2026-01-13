@@ -10,7 +10,7 @@ function App() {
   return (
     <Routes>
       {/* Redirect root to login */}
-      <Route path="/" element={<Navigate to="/users" replace />} />
+      <Route path="/" element={<Navigate to="/login" replace />} />
 
       {/* Login page WITHOUT sidebar & navbar */}
       <Route path="/login" element={<Login />} />
